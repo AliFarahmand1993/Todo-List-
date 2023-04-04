@@ -9,8 +9,8 @@ import {
 import { openAlert } from '../Redux/Slices/alertSlice';
 import { addMembers, setActivityLoading, updateActivity, updateBackground, updateDescription } from '../Redux/Slices/boardSlice';
 
-const listRoute = 'http://localhost:3001/list';
-const boardRoute = 'http://localhost:3001/board';
+const listRoute = 'https://todo-list-server-theta.vercel.app/list';
+const boardRoute = 'https://todo-list-server-theta.vercel.app/board';
 
 export const getLists = async (boardId, dispatch) => {
 	dispatch(setLoading(true));
